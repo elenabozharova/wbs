@@ -1,1 +1,33 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
+<https://raw.githubusercontent.com/elenabozharova/wbs/main/foaf.ttl#me>
+        a                    foaf:Person ;
+        foaf:family_name     "Bozharova" ;
+        foaf:givenname       "Elena" ;
+        foaf:knows           [ a                  foaf:Person ;
+                               foaf:mbox_sha1sum  "217b862b8764bae3271fab6e9e1f1af97f4889c5" ;
+                               foaf:name          "Marija Krpachovska"
+                             ] ;
+        foaf:knows           [ a                  foaf:Person ;
+                               rdfs:seeAlso       <https://raw.githubusercontent.com/dijanasazdevska/foaf/main/foaf.ttl?fbclid=IwAR2L8tdtmJxHgCK-vqZUzMTf1vgnpOCXP0MuUYfCoNn8-9B6c_jYGECbxjw> ;
+                               foaf:mbox_sha1sum  "e256310852c4c2e0b9d956eeda96fb228e34c637" ;
+                               foaf:name          "Dijana Sazdevska"
+                             ] ;
+        foaf:knows           [ a                  foaf:Person ;
+                               rdfs:seeAlso       <https://raw.githubusercontent.com/tijanastojanovska/VBS_Domasno5_181089/main/foaf.ttl> ;
+                               foaf:mbox_sha1sum  "95694ae4b6649dbd15f86a1952dfd892918da221" ;
+                               foaf:name          "Tijana Stojanovska"
+                             ] ;
+        foaf:mbox_sha1sum    "ee49db4684b290932760eb02134c3baca0babcd8" ;
+        foaf:name            "Elena Bozharova" ;
+        foaf:schoolHomepage  <https://www.finki.ukim.mk/mk> .
+
+<https://raw.githubusercontent.com/elenabozharova/wbs/main/foaf.ttl>
+        a                     foaf:PersonalProfileDocument ;
+        admin:errorReportsTo  <mailto:leigh@ldodds.com> ;
+        admin:generatorAgent  <http://www.ldodds.com/foaf/foaf-a-matic> ;
+        foaf:maker            <https://raw.githubusercontent.com/elenabozharova/wbs/main/foaf.ttl#me> ;
+        foaf:primaryTopic     <https://raw.githubusercontent.com/elenabozharova/wbs/main/foaf.ttl#me> .
